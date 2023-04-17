@@ -29,18 +29,14 @@ data class Summoner(
   val championDetails: MutableList<ChampionDetails> = mutableListOf()
 )
 
-fun main() {
-  val me = Summoner(
-    name = "Francisco Lucas",
-    status = Status.Online,
-    level = 100,
-    numRiotPoints = 1000,
-    numBlueEssensse = 5000,
-    championDetails = mutableListOf(
-      ChampionDetails(Champions.Fizz, lastHighestNote = Note.SMinus),
-      ChampionDetails(Champions.Teemo, lastHighestNote = Note.SPlus)
-    )
+val testUser = Summoner(
+  name = "Francisco Lucas",
+  status = Status.Online,
+  level = 100,
+  numRiotPoints = 1000,
+  numBlueEssensse = 5000,
+  championDetails = mutableListOf(
+    ChampionDetails(Champions.Fizz, lastHighestNote = Note.SMinus),
+    ChampionDetails(Champions.Teemo, lastHighestNote = Note.SPlus)
   )
-
-  println(me)
-}
+)
